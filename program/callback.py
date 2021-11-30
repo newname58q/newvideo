@@ -65,7 +65,7 @@ async def cbguides(_, query: CallbackQuery):
 
 💡 **Bᴜ ʙᴏᴛ ʜᴀᴋᴋıɴᴅᴀ ꜱᴏʀᴜʟᴀʀıɴıᴢ ᴠᴀʀꜱᴀ, @jackdanielssx ʙᴏᴛ ꜱᴀʜɪʙɪɴᴇ ᴠᴇʏᴀᴅᴀ ᴅᴇꜱᴛᴇᴋ ꜱᴏʜʙᴇᴛɪɴᴇ ɪʟᴇᴛᴇʙɪʟɪʀꜱɪɴɪᴢ.: @{GROUP_SUPPORT}**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Cʀᴇᴀᴛᴏʀ{BOT_NAME} @jackdanielssx""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Gᴇʀɪ", callback_data="cbstart")]]
         ),
@@ -77,7 +77,7 @@ async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Mᴇʀʜᴀʙᴀ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
-» **press the button below to read the explanation and see the list of available commands !**
+» **Açıᴋʟᴀᴍᴀʏı Oᴋᴜᴍᴀᴋ Vᴇ Mᴇᴠᴄᴜᴛ Kᴏᴍᴜᴛʟᴀʀıɴ Lɪꜱᴛᴇꜱɪɴɪ Göʀᴍᴇᴋ İçɪɴ Aşᴀɢıᴅᴀᴋɪ Düɢᴍᴇʏᴇ Bᴀꜱıɴ !**
 
 ⚡ __Cʀᴇᴀᴛᴏʀ {BOT_NAME} @jackdanielssx""",
         reply_markup=InlineKeyboardMarkup(
@@ -105,8 +105,8 @@ async def cbbasic(_, query: CallbackQuery):
 » /vplay (Viᴅᴇᴏ Aᴅı / Lɪɴᴋ) - Göʀüɴᴛüʟü ꜱᴏʜʙᴇᴛᴛᴇ ᴠɪᴅᴇᴏ ᴏʏɴᴀᴛ
 » /vstream - ʏᴛ ʟɪᴠᴇ/ᴍ3ᴜ8'ᴅᴇɴ ᴄᴀɴʟı ᴠɪᴅᴇᴏ ᴏʏɴᴀᴛıɴ
 » /playlist - Çᴀʟᴍᴀ ʟɪꜱᴛᴇꜱɪɴɪ ɢöꜱᴛᴇʀ
-» /video (query) - Yᴏᴜᴛᴜʙᴇ'ᴅᴀɴ ᴠɪᴅᴇᴏ ɪɴᴅɪʀᴍᴇ
-» /song (query) - Yᴏᴜᴛᴜʙᴇ'ᴅᴀɴ şᴀʀᴋı ɪɴᴅɪʀᴍᴇ
+» /bul (query) - Yᴏᴜᴛᴜʙᴇ'ᴅᴀɴ şᴀʀᴋı ɪɴᴅɪʀᴍᴇ
+» /ara (query) - Yᴏᴜᴛᴜʙᴇ'ᴅᴀɴ ᴠɪᴅᴇᴏ ɪɴᴅɪʀᴍᴇ
 » /lyric (query) - Şᴀʀᴋı ꜱöᴢü ᴀʀᴀᴍᴀ
 » /search (query) - ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ʙᴀɢʟᴀɴᴛıꜱı ᴀʀᴀᴍᴀ
 
