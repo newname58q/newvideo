@@ -16,32 +16,37 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Hᴏşɢᴇʟᴅɪɴ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ʏᴇɴɪ ᴛᴇʟᴇɢʀᴀᴍ'ıɴ ɢöʀüɴᴛüʟü ꜱᴏʜʙᴇᴛʟᴇʀɪ ᴀʀᴀᴄıʟıɢıʏʟᴀ Gʀᴜᴘʟᴀʀᴅᴀ Müᴢiᴋ Vᴇ Viᴅᴇᴏ Oʏɴᴀᴛᴍᴀɴıᴢᴀ Oʟᴀɴᴀᴋ Tᴀɴıʀ!**
+        f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's video chats!**
 
-💡 **Kᴏᴍᴜᴛʟᴀʀ ᴅüɢᴍᴇꜱɪɴɪ ᴛıᴋʟᴀʏᴀʀᴀᴋ ʙᴏᴛ'ᴜɴ ᴛüᴍ ᴋᴏᴍᴜᴛʟᴀʀıɴı ᴠᴇ ɴᴀꜱıʟ çᴀʟışᴛıᴋʟᴀʀıɴı öɢʀᴇɴɪɴ » 📚 Kᴏᴍᴜᴛʟᴀʀ Düɢᴍᴇꜱɪ!**
+💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
 
-🔖 **Bᴜ Bᴏᴛᴜɴ Nᴀꜱıʟ Kᴜʟʟᴀɴıʟᴀᴄᴀɢıɴı Öɢʀᴇɴᴍᴇᴋ İçɪɴ Lüᴛꜰᴇɴ Tıᴋʟᴀʏıɴ » ❓ Bᴀꜱɪᴛ Kᴏᴍᴜᴛʟᴀʀ!**""",
+🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Bᴇɴɪ Gʀᴜʙᴜɴᴀ Eᴋʟᴇ ➕",
+                        "➕ Add me to your Group ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Bᴀꜱɪᴛ Kᴏᴍᴜᴛʟᴀʀ", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Kᴏᴍᴜᴛʟᴀʀ", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Sᴀʜiʙi", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Rᴇꜱᴍi Gʀᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Rᴇꜱᴍɪ Kᴀɴᴀʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                    )
                 ],
             ]
         ),
@@ -52,11 +57,11 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""❓ **Bᴜ Bᴏᴛᴜ Kᴜʟʟᴀɴᴍᴀᴋ İçɪɴ Tᴇᴍᴇʟ Aɴʟᴀᴛıᴍ:**
+        f"""❓ **Basic Guide for using this bot:**
 
-1.) ***Öɴᴄᴇ ʙᴇɴɪ ɢʀᴜʙᴜɴᴜᴢᴀ ᴇᴋʟᴇʏɪɴ.**
-2.) **Bᴇɴɪ ʏöɴᴇᴛɪᴄɪ ᴏʟᴀʀᴀᴋ ʏüᴋꜱᴇʟᴛ ᴠᴇ ᴀɴᴏɴɪᴍ ʏöɴᴇᴛɪᴄɪ ʜᴀʀɪç ᴛüᴍ ɪᴢɪɴʟᴇʀɪ ᴠᴇʀ.**
-3.) **Bᴇɴɪ ʏöɴᴇᴛɪᴄɪ ᴇᴛᴛɪʀᴅɪᴋᴛᴇɴ ꜱᴏɴʀᴀ, ʏöɴᴇᴛɪᴄɪ ᴠᴇʀɪʟᴇʀɪɴɪ ʏᴇɴɪʟᴇᴍᴇᴋ ɪçɪɴ /reload ɢʀᴜᴘᴛᴀ ʏᴀᴢıɴ.**
+1.) **First, add me to your group.**
+2.) **Then, promote me as administrator and give all permissions except Anonymous Admin.**
+3.) **After promoting me, type /reload in group to refresh the admin data.**
 3.) **Add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.**
 4.) **Turn on the video chat first before start to play video/music.**
 5.) **Sometimes, reloading the bot by using /reload command can help you to fix some problem.**
