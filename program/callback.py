@@ -57,17 +57,17 @@ async def cbguides(_, query: CallbackQuery):
 1.) ***Öɴᴄᴇ ʙᴇɴɪ ɢʀᴜʙᴜɴᴜᴢᴀ ᴇᴋʟᴇʏɪɴ.**
 2.) **Bᴇɴɪ ʏöɴᴇᴛɪᴄɪ ᴏʟᴀʀᴀᴋ ʏüᴋꜱᴇʟᴛ ᴠᴇ ᴀɴᴏɴɪᴍ ʏöɴᴇᴛɪᴄɪ ʜᴀʀɪç ᴛüᴍ ɪᴢɪɴʟᴇʀɪ ᴠᴇʀ.**
 3.) **Bᴇɴɪ ʏöɴᴇᴛɪᴄɪ ᴇᴛᴛɪʀᴅɪᴋᴛᴇɴ ꜱᴏɴʀᴀ, ʏöɴᴇᴛɪᴄɪ ᴠᴇʀɪʟᴇʀɪɴɪ ʏᴇɴɪʟᴇᴍᴇᴋ ɪçɪɴ /reload ɢʀᴜᴘᴛᴀ ʏᴀᴢıɴ.**
-3.) **Gʀᴜʙᴜɴᴜᴢᴀ @{ASSISTANT_NAME}ᴇᴋʟᴇʏɪɴ ᴠᴇʏᴀ ᴏɴᴜ ᴅᴀᴠᴇᴛ ᴇᴛᴍᴇᴋ ɪçɪɴ /gel ʏᴀᴢıɴ.**
-4.) **Viᴅᴇᴏ/Müᴢɪᴋ ᴏʏɴᴀᴛᴍᴀʏᴀ ʙᴀşʟᴀᴍᴀᴅᴀɴ öɴᴄᴇ ɢöʀüɴᴛüʟü ꜱᴏʜʙᴇᴛɪ ᴀçıɴ.**
-5.) **Bᴀᴢᴇɴ /reload ᴋᴏᴍᴜᴛᴜɴᴜ ᴋᴜʟʟᴀɴᴀʀᴀᴋ ʙᴏᴛᴜ ʏᴇɴɪᴅᴇɴ ʙᴀşʟᴀᴛᴍᴀᴋ ᴠᴇ ʙᴀᴢı ꜱᴏʀᴜɴʟᴀʀı çöᴢᴍᴇɴɪᴢᴇ ʏᴀʀᴅıᴍᴄı ᴏʟᴀʙɪʟɪʀ.**
+3.) **Add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.**
+4.) **Turn on the video chat first before start to play video/music.**
+5.) **Sometimes, reloading the bot by using /reload command can help you to fix some problem.**
 
-📌 **Aꜱɪꜱᴛᴀɴ ʙᴏᴛᴜ ɢöʀüɴᴛüʟü ꜱᴏʜʙᴇᴛᴇ ᴋᴀᴛıʟᴍᴀᴅıʏꜱᴀ, ɢöʀüɴᴛüʟü ꜱᴏʜʙᴇᴛɪɴ ᴀçıᴋ ᴏʟᴅᴜğᴜɴᴅᴀɴ ᴇᴍɪɴ ᴏʟᴜɴ ᴠᴇʏᴀ şᴜɴᴜ ʏᴀᴢıɴ /git ᴠᴇ ꜱᴏɴʀᴀꜱıɴᴅᴀ /gel ʏᴀᴢıɴ ʏᴇɴɪᴅᴇɴ.**
+📌 **If the userbot not joined to video chat, make sure if the video chat already turned on, or type /userbotleave then type /userbotjoin again.**
 
-💡 **Bᴜ ʙᴏᴛ ʜᴀᴋᴋıɴᴅᴀ ꜱᴏʀᴜʟᴀʀıɴıᴢ ᴠᴀʀꜱᴀ, @jackdanielssx ʙᴏᴛ ꜱᴀʜɪʙɪɴᴇ ᴠᴇʏᴀᴅᴀ ᴅᴇꜱᴛᴇᴋ ꜱᴏʜʙᴇᴛɪɴᴇ ɪʟᴇᴛᴇʙɪʟɪʀꜱɪɴɪᴢ.: @{GROUP_SUPPORT}**
+💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}**
 
-⚡ __Cʀᴇᴀᴛᴏʀ{BOT_NAME} @jackdanielssx""",
+⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Gᴇʀɪ", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
     )
 
@@ -75,20 +75,20 @@ async def cbguides(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Mᴇʀʜᴀʙᴀ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
+        f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
-» **Açıᴋʟᴀᴍᴀʏı Oᴋᴜᴍᴀᴋ Vᴇ Mᴇᴠᴄᴜᴛ Kᴏᴍᴜᴛʟᴀʀıɴ Lɪꜱᴛᴇꜱɪɴɪ Göʀᴍᴇᴋ İçɪɴ Aşᴀɢıᴅᴀᴋɪ Düɢᴍᴇʏᴇ Bᴀꜱıɴ !**
+» **press the button below to read the explanation and see the list of available commands !**
 
-⚡ __Cʀᴇᴀᴛᴏʀ {BOT_NAME} @jackdanielssx""",
+⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👷🏻 Aᴅᴍɪɴ Kᴏᴍᴜᴛ", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 Cʀᴇᴀᴛᴏʀ", callback_data="cbsudo"),
+                    InlineKeyboardButton("👷🏻 Admin Cmd", callback_data="cbadmin"),
+                    InlineKeyboardButton("🧙🏻 Sudo Cmd", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("📚 Bᴀꜱɪᴄ Kᴏᴍᴜᴛ", callback_data="cbbasic")
+                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 Gᴇʀɪ", callback_data="cbstart")
+                    InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
                 ],
             ]
         ),
@@ -98,25 +98,25 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 Tᴇᴍᴇʟ Kᴏᴍᴜᴛʟᴀʀ:
+        f"""🏮 here is the basic commands:
 
-» /oynat (Şᴀʀᴋı Aᴅı / Lɪɴᴋ) - Göʀüɴᴛüʟü ꜱᴏʜʙᴇᴛᴛᴇ ᴍüᴢɪᴋ çᴀʟ
-» /stream (İꜱɪᴍ / Lɪɴᴋ) - Yᴛ Cᴀɴʟı/ʀᴀᴅʏᴏ ᴄᴀɴʟı ᴍüᴢɪɢɪɴɪ ʏᴀʏıɴʟᴀʏıɴ
-» /vplay (Viᴅᴇᴏ Aᴅı / Lɪɴᴋ) - Göʀüɴᴛüʟü ꜱᴏʜʙᴇᴛᴛᴇ ᴠɪᴅᴇᴏ ᴏʏɴᴀᴛ
-» /vstream - ʏᴛ ʟɪᴠᴇ/ᴍ3ᴜ8'ᴅᴇɴ ᴄᴀɴʟı ᴠɪᴅᴇᴏ ᴏʏɴᴀᴛıɴ
-» /playlist - Çᴀʟᴍᴀ ʟɪꜱᴛᴇꜱɪɴɪ ɢöꜱᴛᴇʀ
-» /bul (query) - Yᴏᴜᴛᴜʙᴇ'ᴅᴀɴ şᴀʀᴋı ɪɴᴅɪʀᴍᴇ
-» /ara (query) - Yᴏᴜᴛᴜʙᴇ'ᴅᴀɴ ᴠɪᴅᴇᴏ ɪɴᴅɪʀᴍᴇ
-» /lyric (query) - Şᴀʀᴋı ꜱöᴢü ᴀʀᴀᴍᴀ
-» /search (query) - ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ʙᴀɢʟᴀɴᴛıꜱı ᴀʀᴀᴍᴀ
+» /mplay (song name/link) - play music on video chat
+» /stream (query/link) - stream the yt live/radio live music
+» /vplay (video name/link) - play video on video chat
+» /vstream - play live video from yt live/m3u8
+» /playlist - show you the playlist
+» /video (query) - download video from youtube
+» /song (query) - download song from youtube
+» /lyric (query) - scrap the song lyric
+» /search (query) - search a youtube video link
 
-» /ping - Bᴏᴛ ᴘɪɴɢ ᴅᴜʀᴜᴍᴜɴᴜ ɢöꜱᴛᴇʀ
-» /uptime - Bᴏᴛ çᴀʟışᴍᴀ ꜱüʀᴇꜱɪ ᴅᴜʀᴜᴍᴜɴᴜ ɢöꜱᴛᴇʀ
-» /alive - Bᴏᴛᴜɴ ʙɪʟɢɪꜱɪɴɪ ɢöꜱᴛᴇʀ (ɢʀᴜᴘᴛᴀ)
+» /ping - show the bot ping status
+» /uptime - show the bot uptime status
+» /alive - show the bot alive info (in group)
 
-⚡️ __Cʀᴇᴀᴛᴏʀ {BOT_NAME} @jackdanielssx""",
+⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Gᴇʀɪ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
     )
 
@@ -124,40 +124,40 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 Aᴅᴍɪɴ Kᴏᴍᴜᴛʟᴀʀı:
+        f"""🏮 here is the admin commands:
 
-» /pause - Aᴋışı Dᴜʀᴀᴋʟᴀᴛ
-» /resume - Aᴋışı Dᴇᴠᴀᴍ Eᴛᴛɪʀ
-» /skip - Sᴏɴʀᴀᴋɪ Aᴋışᴀ Gᴇç
-» /stop - Aᴋışı Dᴜʀᴅᴜʀ
-» /vmute - Sᴇꜱʟɪ Sᴏʜʙᴇᴛᴛᴇ Uꜱᴇʀʙᴏᴛ'ᴜ Sᴇꜱꜱɪᴢᴇ Aʟ
-» /vunmute - Sᴇꜱʟɪ Sᴏʜʙᴇᴛᴛᴇ Uꜱᴇʀʙᴏᴛ'ᴜɴ Sᴇꜱɪɴɪ Aç
-» /volume `1-200` - Müᴢɪɢɪɴ Sᴇꜱɪɴɪ Aʏᴀʀʟᴀʏıɴ (Uꜱᴇʀʙᴏᴛ Yöɴᴇᴛɪᴄɪ Oʟᴍᴀʟıᴅıʀ)
-» /reload - Bᴏᴛᴜ Yᴇɴɪᴅᴇɴ Yüᴋʟᴇʏɪɴ Vᴇ Yöɴᴇᴛɪᴄɪ Vᴇʀɪʟᴇʀɪɴɪ Yᴇɴɪʟᴇʏɪɴ
-» /gel - Aꜱɪꜱᴛᴀɴ'ı Gʀᴜʙᴀ Kᴀᴛıʟᴍᴀʏᴀ Dᴀᴠᴇᴛ Eᴛ
-» /git - Aꜱɪꜱᴛᴀɴ'ıɴ Gʀᴜᴘᴛᴀɴ Aʏʀıʟᴍᴀꜱıɴı Eᴍʀᴇᴛ
+» /pause - pause the stream
+» /resume - resume the stream
+» /skip - switch to next stream
+» /stop - stop the streaming
+» /vmute - mute the userbot on voice chat
+» /vunmute - unmute the userbot on voice chat
+» /volume `1-200` - adjust the volume of music (userbot must be admin)
+» /reload - reload bot and refresh the admin data
+» /userbotjoin - invite the userbot to join group
+» /userbotleave - order userbot to leave from group
 
-⚡️ __Cʀᴇᴀᴛᴏʀ {BOT_NAME} @jackdanielssx""",
+⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Gᴇʀɪ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
     )
 
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 Sᴜᴅᴏ Kᴏᴍᴜᴛʟᴀʀı:
+        f"""🏮 here is the sudo commands:
 
-» /rmw - Tüᴍ Dᴏꜱʏᴀʟᴀʀı Tᴇᴍɪᴢʟᴇ
-» /rmd - İɴᴅɪʀɪʟᴇɴ Tüᴍ Dᴏꜱʏᴀʟᴀʀı Tᴇᴍɪᴢʟᴇ
-» /sysinfo - Sɪꜱᴛᴇᴍ Bɪʟɢɪʟᴇʀɪɴɪ Göꜱᴛᴇʀ
-» /update - Bᴏᴛᴜɴᴜᴢᴜ Eɴ Sᴏɴ Süʀüᴍᴇ Güɴᴄᴇʟʟᴇʏɪɴ
-» /restart - Bᴏᴛᴜɴᴜ Yᴇɴɪᴅᴇɴ Bᴀşʟᴀᴛ
-» /leaveall - Uꜱᴇʀʙᴏᴛ'ᴜɴ Tüᴍ Gʀᴜᴘᴛᴀɴ Aʏʀıʟᴍᴀꜱıɴı Eᴍʀᴇᴛ
+» /rmw - clean all raw files
+» /rmd - clean all downloaded files
+» /sysinfo - show the system information
+» /update - update your bot to latest version
+» /restart - restart your bot
+» /leaveall - order userbot to leave from all group
 
-⚡ __Cʀᴇᴀᴛᴏʀ {BOT_NAME} @jackdanielssx""",
+⚡ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Gᴇʀɪ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
     )
 
@@ -165,30 +165,34 @@ async def cbsudo(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbmenu"))
 async def cbmenu(_, query: CallbackQuery):
     if query.message.sender_chat:
-        return await query.answer("Sᴇɴ ʙɪʀ ᴀɴᴏɴɪᴍ ʏöɴᴇᴛɪᴄɪꜱɪɴ !\n\n» Yöɴᴇᴛɪᴄɪ ʜᴀᴋʟᴀʀıɴᴅᴀɴ ᴋᴜʟʟᴀɴıᴄı ʜᴇꜱᴀʙıɴᴀ ɢᴇʀɪ ᴅöɴ.")
+        return await query.answer("you're an Anonymous Admin !\n\n» revert back to user account from admin rights.")
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
     if not a.can_manage_voice_chats:
-        return await query.answer("💡 Yᴀʟɴıᴢᴄᴀ ʙᴜ ᴅüɢᴍᴇʏᴇ ᴅᴏᴋᴜɴᴀʙɪʟᴇɴ ꜱᴇꜱʟɪ ꜱᴏʜʙᴇᴛʟᴇʀɪ ʏöɴᴇᴛᴍᴇ ɪᴢɴɪɴᴇ ꜱᴀʜɪᴘ ʏöɴᴇᴛɪᴄɪn !", show_alert=True)
+        return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
           await query.edit_message_text(
-              f"⚙️ **Aʏᴀʀʟᴀʀ** {query.message.chat.title}\n\n⏸ : 🔇 : ᴋᴜʟʟᴀɴıᴄı ʙᴏᴛᴜɴᴜ ꜱᴇꜱꜱɪᴢᴇ ᴀʟ\n🔊 : ᴋᴜʟʟᴀɴıᴄı ʙᴏᴛᴜɴᴜɴ ꜱᴇꜱɪɴɪ ᴀç",
+              f"⚙️ **settings of** {query.message.chat.title}\n\n⏸ : pause stream\n▶️ : resume stream\n🔇 : mute userbot\n🔊 : unmute userbot\n⏹ : stop stream",
               reply_markup=InlineKeyboardMarkup(
                   [[
+                      InlineKeyboardButton("⏹", callback_data="cbstop"),
+                      InlineKeyboardButton("⏸", callback_data="cbpause"),
+                      InlineKeyboardButton("▶️", callback_data="cbresume"),
+                  ],[
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
                   ],[
-                      InlineKeyboardButton("🗑 Kᴀᴘᴀᴛ", callback_data="cls")],
+                      InlineKeyboardButton("🗑 Close", callback_data="cls")],
                   ]
              ),
          )
     else:
-        await query.answer("❌ Şᴜ Aɴᴅᴀ Hɪçʙɪʀ Şᴇʏ Yᴀʏıɴʟᴀɴᴍıʏᴏʀ", show_alert=True)
+        await query.answer("❌ nothing is currently streaming", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cls"))
 async def close(_, query: CallbackQuery):
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
     if not a.can_manage_voice_chats:
-        return await query.answer("💡 Yᴀʟɴıᴢᴄᴀ ʙᴜ ᴅüɢᴍᴇʏᴇ ᴅᴏᴋᴜɴᴀʙɪʟᴇɴ ꜱᴇꜱʟɪ ꜱᴏʜʙᴇᴛʟᴇʀɪ ʏöɴᴇᴛᴍᴇ ɪᴢɴɪɴᴇ ꜱᴀʜɪᴘ ʏöɴᴇᴛɪᴄɪ !", show_alert=True)
+        return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
     await query.message.delete()
